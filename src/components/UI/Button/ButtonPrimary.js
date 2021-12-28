@@ -1,0 +1,12 @@
+import styles from "./Button.module.css"
+
+
+const ButtonPrimary = (props) => {
+    return (
+        <button type={props.type} className={styles.button} onClick={props.onClick}>
+            {props.children}
+        </button>
+    )
+}
+
+export default ButtonPrimary;
